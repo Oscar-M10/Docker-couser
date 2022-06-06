@@ -1,0 +1,478 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# Este es software libre; consulte en el c�digo fuente las condiciones de copia.
+# NO hay garant�a; ni siquiera para MERCANTIBILIDAD o EL CUMPLIMIENTO DE
+# ALG�N PROP�SITO PARTICULAR.
+
+ # Este programa fue construido para i386-pc-mingw32
+ 
+
+# Base de datos del Make, mostrada en Mon Jun 06 14:40:18 2022
+
+# Variables
+
+# autom�tica/o
+<D = $(patsubst %/,%,$(dir $<))
+# autom�tica/o
+?F = $(notdir $?)
+# entorno
+OMP_WAIT_POLICY = PASSIVE
+# makefile
+MAKEFLAGS = Rrqp
+# entorno
+VSCODE_LOG_NATIVE = false
+# autom�tica/o
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (de `makefile', l�nea 11):
+REDIS_TAG = 3
+# autom�tica/o
+@D = $(patsubst %/,%,$(dir $@))
+# entorno
+HOMEDRIVE = C:
+# autom�tica/o
+@F = $(notdir $@)
+# autom�tica/o
+^D = $(patsubst %/,%,$(dir $^))
+# m 
+akefile
+CURDIR := c:/Users/SUPERVISOR/Desktop/automatizaci�n
+# por defecto
+SHELL := sh.exe
+# entorno
+WINDIR = C:\Windows
+# entorno
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{},"_languagePackSupport":true}
+# entorno
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# entorno
+ONEDRIVE = C:\Users\SUPERVISOR\OneDrive - Instituto Tecnol�gico Superior de Mulege
+# entorno
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (de `makefile', l�nea 1):
+MAKEFILE_LIST :=  makefile
+# entorno
+TMP = C:\Users\SUPERV~1\AppData\Local\Temp
+# makefile (de `makefile', l�nea 12):
+REDIS_CONTAINER_NAME = redis
+# entorno
+VSCODE_VERBOSE_LOGGING = true
+# entorno
+PROGRAMW6432 = C:\Program Files
+# entorno
+PROGRAMDATA = C:\ProgramData
+# entorno
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2efa54f8-1ed0-4be4-b069-c1b3baf28340-sock
+# entorno
+VSCODE_CWD = C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code
+# entorno
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Git\cmd;C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps;;C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin
+# entorno
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# entorno
+ZES_ENABLE_SYSMAN = 1
+# entorno
+PROCESSOR_ARCHITECTURE = x86
+# entorno
+USERPROFILE = C:\Users\SUPERVISOR
+# entorno
+ALLUSERSPROFILE = C:\ProgramData
+# entorno
+VSCODE_LOG_STACK = false
+# entorno
+NUMBER_OF_PROCESSORS = 4
+# entorno
+ELECTRON_RUN_AS_NODE = 1
+# por defecto
+.FEATURES := target-specific order-only second-expansion else-if archives
+# autom�tica/o
+%F = $(notdir $%)
+# entorno
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4008_YWAPLDBJZBWNUCDG
+# entorno
+VSCODE_PIPE_LOGGING = true
+# entorno
+COMPUTERNAME = DESKTOP-EJRUL4M
+# entorno
+PROGRAMFILES = C:\Program Files (x86)
+# entorno
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# entorno
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# entorno
+USERNAME = SUPERVISOR
+# entorno
+PUBLIC = C:\Users\Public
+# entorno
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# entorno
+VSCODE_CODE_CACHE_PATH = C:\Users\SUPERVISOR\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# entorno
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# entorno
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# entorno
+LOGONSERVER = \\DESKTOP-EJRUL4M
+# entorno
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# entorno
+USERDOMAIN = DESKTOP-EJRUL4M
+# por defecto
+MAKE = $(MAKE_COMMAND)
+# por defecto
+MAKECMDGOALS := all
+# entorno
+ONEDRIVECOMMERCIAL = C:\Users\SUPERVISOR\OneDrive - Instituto Tecnol�gico Superior de Mulege
+# por defecto
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := build_redis
+# entorno
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# autom�tica/o
+%D = $(patsubst %/,%,$(dir $%))
+# entorno
+LOCALAPPDATA = C:\Users\SUPERVISOR\AppData\Local
+# entorno
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# por defecto
+MAKE_COMMAND := make.exe
+# entorno
+PROCESSOR_ARCHITEW6432 = AMD64
+# por defecto
+.VARIABLES := 
+# autom�tica/o
+*F = $(notdir $*)
+# entorno
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 11, GenuineIntel
+# entorno
+OS = Windows_NT
+# entorno
+VSCODE_IPC_HOOK = \\.\pipe\d27abdbfaf55e41a8fa0627773fdf0a7-1.67.2-main-sock
+# entorno
+KMP_BLOCKTIME = 0
+# entorno
+HOMEPATH = \Users\SUPERVISOR
+# entorno
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# entorno
+PROMPT = $P$G
+# entorno
+MFLAGS = -Rrqp
+# autom�tica/o
+*D = $(patsubst %/,%,$(dir $*))
+# entorno
+SYSTEMROOT = C:\Windows
+# autom�tica/o
++D = $(patsubst %/,%,$(dir $+))
+# autom�tica/o
++F = $(notdir $+)
+# entorno
+APPDATA = C:\Users\SUPERVISOR\AppData\Roaming
+# entorno
+TEMP = C:\Users\SUPERV~1\AppData\Local\Temp
+# entorno
+COMSPEC = C:\Windows\system32\cmd.exe
+# por defecto
+MAKEFILES := 
+# autom�tica/o
+<F = $(notdir $<)
+# makefile (de `makefile', l�nea 13):
+REDIS_IMAGE_NAME = redis
+# entorno
+LC_ALL = C
+# autom�tica/o
+^F = $(notdir $^)
+# por defecto
+SUFFIXES := 
+# entorno
+SYSTEMDRIVE = C:
+# entorno
+SESSIONNAME = Console
+# entorno
+PROCESSOR_REVISION = 9e0b
+# entorno
+MAKELEVEL := 0
+# entorno
+LANG = C
+# entorno
+PROCESSOR_LEVEL = 6
+# entorno
+VSCODE_PID = 4008
+# entorno
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=94/1024=9%, Rehash=0, Colisiones=9/114=8%
+
+# Valores de variables espec�ficas al patr�n
+
+# No hay valores de variables espec�ficas al patr�n.
+
+# Directorios
+
+# : podr�a no estar establecido.
+# C:\Program Files\Common Files\Oracle\Java\javapath (llave C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1652801867): 6 archivos, no imposibilidades.
+# C:\Program Files\Docker\Docker\resources\bin (llave C:/Program Files/Docker/Docker/resources/bin, mtime 1652884385): 13 archivos, no imposibilidades.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528089): 30 archivos, no imposibilidades.
+# C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps (llave C:/Users/SUPERVISOR/AppData/Local/Microsoft/WindowsApps, mtime 1653673214): 15 archivos, no imposibilidades.
+# C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1652452309): 171 archivos, no imposibilidades.
+# . (llave c:/Users/SUPERVISOR/Desktop/automatizaci�n, mtime 1654544037): 5 archivos, no imposibilidades.
+# C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/SUPERVISOR/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1654532947): 4 archivos, no imposibilidades.
+# C:\Windows\System32\OpenSSH\: podr�a no estar establecido.
+# C:\Program Files\PuTTY\ (llave C:/Program Files/PuTTY/, mtime 1654011803): 12 archivos, no imposibilidades.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (llave C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1652454501): 5 archivos, no imposibilidades.
+# C:\Windows (llave C:/Windows, mtime 1653489566): 106 archivos, no imposibilidades.
+# C:\ProgramData\DockerDesktop\version-bin: podr�a no estar establecido.
+# C:\Program Files\Git\cmd (llave C:/Program Files/Git/cmd, mtime 1654547521): 8 archivos, no imposibilidades.
+# C:\Windows\system32 (llave C:/Windows/system32, mtime 1654542138): 2807 archivos, no imposibilidades.
+# C:\Program Files  
+(x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1654533446): 5 archivos, no imposibilidades.
+
+# 3187 archivos, no imposibilidades en 16 directorios.
+
+# Reglas impl�citas.
+
+# No hay reglas impl�citas.
+
+# Archivos
+
+down_monitor_grafana:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 107):
+	@echo 'Parar el servicio de grafana'
+	cd monitor/grafana && docker-compose down grafana
+	
+
+stop_monitor_grafana:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 86):
+	@echo 'Parar el servicio de grafana'
+	cd monitor/grafana && docker-compose stop grafana
+	
+
+down_monitor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 116):
+	@echo 'Contenedores en ejecucion'
+	docker ps -a 
+	$(MAKE) down_monitor_prometheus
+	$(MAKE) down_monitor_grafana
+	$(MAKE) down_monitor_redis
+	$(MAKE) down_monitor_redis_exporter
+	@echo 'Contenedores en ejecucion'
+	docker ps -a 
+	
+
+stop_monitor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 95):
+	@echo 'Contenedores en ejecucion'
+	docker ps -a 
+	$(MAKE) stop_monitor_prometheus
+	$(MAKE) stop_monitor_grafana
+	$(MAKE) stop_monitor_redis
+	$(MAKE) stop_monitor_redis_exporter
+	
+
+# No es un objetivo:
+all:
+#  Objetivo de l�nea de instrucciones.
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  El archivo no existe.
+#  El archivo ha sido actualizado.
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
+
+delete_redis:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 42):
+	@echo 'parar redis'
+	docker stop $(REDIS_CONTAINER_NAME)
+	@echo 'eliminacion del contenedor $(REDIS_IMAGE_NAME)'
+	docker rm $(REDIS_CONTAINER_NAME)
+	@echo 'Eliminacion d ela imgen $(REDIS_IMAGE_NAME)'
+	docker rmi $(REDIS_IMAGE_NAME):$(REDIS_TAG)
+	@echo 'Imagenes de docker'
+	docker images -a
+	@echo 'verificacion de la eliminacion'
+	docker ps -a
+	
+
+# No es un objetivo:
+.DEFAULT:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+
+build_monitor_prometheus:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 58):
+	@echo 'Construccion y despliegue de prometheus'
+	cd monitor/prometheus && docker-compose up -d 
+	
+
+build_monitor_redis_exporter:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 70):
+	@echo 'Construccion y despliegue de prometheus'
+	cd monitor/redis-exporter && docker-compose up -d
+	
+
+# No es un objetivo:
+makefile:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  �ltima modificaci�n 2022-06-06 14:20:37
+#  El archivo ha sido actualizado.
+#  Actualizado con �xito.
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
+
+down_monitor_redis:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 110):
+	@echo 'Parar el servicio de redis'
+	cd monitor/redis && docker-compose down redis
+	
+
+build_monitor_grafana:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 62):
+	@echo 'Construccion y despliegue de prometheus'
+	cd monitor/grafana && docker-compose up -d
+	
+
+stop_monitor_redis:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 89):
+	@echo 'Parar el servicio de redis'
+	cd monitor/redis && docker-compose stop redis
+	
+
+build_monitor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 74):
+	@echo 'Contenedores en ejecucion'
+	docker ps -a 
+	$(MAKE) build_monitor_prometheus
+	$(MAKE) build_monitor_grafana
+	$(MAKE) build_monitor_redis
+	$(MAKE) build_monitor_redis_exporter
+	docker ps -a
+	
+
+show_images_containers:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 29):
+	@echo 'Imagenes de docker'
+	docker images -a
+	@echo 'Contenedores en Ejecucion'
+	docker ps --filter status=running
+	@echo 'Contenedores fuera de Ejecucion'
+	docker ps --filter status=exited
+	
+
+# No es un objetivo:
+.SUFFIXES:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+
+build_redis:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 17):
+	@echo 'Construccion de redis con el TAG=$(REDIS_TAG)'
+	docker pull $(REDIS_IMAGE_NAME):$(REDIS_TAG)
+	@echo 'Ejecucion de un contenedor de $(REDIS_IMAGE_NAME) con el nombre $(REDIS_CONTAINER_NAME)'
+	docker run -d --name $(REDIS_CONTAINER_NAME) $(REDIS_IMAGE_NAME):$(REDIS_TAG)
+	
+
+build_monitor_redis:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 66):
+	@echo 'Construccion y despliegue de prometheus'
+	cd monitor/redis && docker-compose up -d
+	
+
+down_monitor_prometheus:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 104):
+	@echo 'Parar el servicio de prometheus'
+	cd monitor/prometheus && docker-compose down prometheus
+	
+
+stop_monitor_prometheus:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 83):
+	@echo 'Parar el servicio de prometheus'
+	cd monitor/prometheus && docker-compose stop prometheus
+	
+
+down_monitor_redis_exporter:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 113):
+	@echo 'Parar el servicio de redis exporter'
+	cd monitor/redis-exporter && docker-compose down redis-exporter
+	
+
+stop_monitor_redis_exporter:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 92):
+	@echo 'Parar el servicio de redis-exporter'
+	cd monitor/redis-exporter && docker-compose stop redis-exporter
+	
+
+# estad�sticas de la tabla de hash de los archivos:
+# Carga=22/1024=2%, Rehash=0, Colisiones=0/33=0%
+# Rutas de b�squeda VPATH
+
+# No hay rutas de b�squeda `vp 
+make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
+
+ath'.
+
+# No hay ruta de b�squeda general (variable `VPATH').
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Se termina la base de datos de Make en Mon Jun 06 14:40:18 2022
+
+ 
