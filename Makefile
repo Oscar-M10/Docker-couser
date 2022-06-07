@@ -229,9 +229,25 @@ build_cadvisor: ## contruccion y despliegue de CADVISOR
 	@echo 'Descarga de la imagen de $(CADVISOR_IMAGE)'
 	docker pull $(CADVISOR_IMAGE):$(CADVISOR_TAG)
 	@echo 'Ejecucion de $(CADVISOR_IMAGE)'
-	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE)
+	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE):$(CADVISOR_TAG)
 
-save_cadvisor:
+save_cadvisor: ## guarda la imagen de cadvisor
 	@echo 'Guarda la imagen cAdvisor'
-	docker save $(ADVISOR_IMAGE):$(CADVISOR_TAG) | gzip >$(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+	docker save $(ADVISOR_IMAGE):$(CADVISOR_TAG) | gzip > $(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+	@echo 'Conexion remota con AWS con SSH'
+	@echo 'Carga de la imagen'
 
+load_cadvisor:
+	@echo 'Carga de la imagen'
+	docker load --input $(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+	@echo 'Ejecucion de un contenedor para cAdvisor'
+	docker run -dp 8080:8080 --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE):$(CADVISOR_TAG)
+
+aws_connection:
+	$(MAKE) save_cadvisor
+	@echo 'Conexion remota con ASW con SSH'
+	$(MAKE) load_cadvisor
+
+delete_cadvisor:
+	docker rm -f $(CADVISOR_CONTAINER)
+	docker rmi $(CADVISOR_IMAGE):$(CADVISOR_TAG)
