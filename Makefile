@@ -176,3 +176,21 @@ deep_delete: ## Eliminacion profunda
 	@echo 'Purgación de las imagenes'
 	docker rmi $(ELASTICSEARCH_IMAGE) $(LOGSTASH_IMAGE) $(KIBANA_IMAGE)
 	$(MAKE) show_elk
+
+# -----------------------------------
+# 4. DESPLIGUE DE LA DAPP BLOCKCHAIN
+# -----------------------------------
+
+#variables
+DAPP_IMAGE = tokensnft
+DAPP_TAG = v1
+DAPP_CONTAINER_NAME=tokens_nft
+
+
+build_dapp: ## 
+	@echo 'construccion de la DAPP'
+	cd colores && docker build -t $(DAPP_IMAGE):$(DAPP_TAG) . 
+
+run_dapp:
+	@echo 'Despliegue de la DAPP'
+	docker run -dp 3000:3000 --name
