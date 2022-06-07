@@ -211,3 +211,7 @@ delete_dapp: ## Depp delete
 show_requirements: ## Visualización de las dependencias de la DApp
 	@echo 'Visualicacion de las dependencias de la DApp'
 	docker run docker run -it $(DAPP_IMAGE:$(DAPP_TAG) bash
+
+test_dapp: ## Test de la DApp
+	@echo 'Test de la DApp'
+	docker run -t $(DAPP_IMAGE):$(DAPP_TAG) test 
