@@ -131,3 +131,48 @@ down_monitor: ## Eliminación de los contenedores del monitor
 .PHONY: help
 help: ## Comando de ayuda
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+
+# -----------------------------------
+# DESPLIEGUE DE ELK
+# -----------------------------------
+
+build_elk: ## construcción y despliegue de ELK
+	@echo 'construccion de ELK'
+	cd ELK && docker-compose build
+	@echo 'despliegue de ELK'
+	cd ELK && docker-compose up -d 
+
+stop_elk: ## Parar los servicios ELK
+	@echo 'parar los servicios'
+	cd ELK && docker-compose stop
+
+start_elk: ## encender los servicios ELK
+	@echo 'Encender los servicios ELK '
+	cd ELK && docker-compose start
+
+restart_elk: ## Reinicio de los servicios ELK
+	@echo 'Reinicio de ELK'
+	$(MAKE) stop_elk
+	$(MAKE) start_elk
+	docker ps 
+
+##variables
+ELASTICSEARCH_IMAGE="elasticsearch:7.9.2"
+LOGSTASH_IMAGE="logstash:7.9.2"
+KIBANA_IMAGE="kibana:7.9.2"
+
+show_elk: ## Mostrar imagenes y contenedores ELK
+	@echo 'Eliminacion profunda de ELK'
+	docker images -a
+	@echo 'Contenedores en ejecucion'
+	docker ps --filter status=running
+	@echo 'Contenedores fuera de ejecucion'
+	docker ps --filter status=exited
+
+deep_delete: ## Eliminacion profunda
+	$(MAKE) show_elk
+	@echo 'Eliminacion de contenedores'
+	cd ELK && docker-compose down
+	@echo 'Purgación de las imagenes'
+	docker rmi $(ELASTICSEARCH_IMAGE) $(LOGSTASH_IMAGE) $(KIBANA_IMAGE)
+	$(MAKE) show_elk
