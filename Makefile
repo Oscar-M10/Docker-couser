@@ -161,7 +161,7 @@ ELASTICSEARCH_IMAGE="elasticsearch:7.9.2"
 LOGSTASH_IMAGE="logstash:7.9.2"
 KIBANA_IMAGE="kibana:7.9.2"
 
-show_elk: ## Mostrar imagenes y contenedores ELK
+show: ## Mostrar imagenes y contenedores ELK
 	@echo 'Eliminacion profunda de ELK'
 	docker images -a
 	@echo 'Contenedores en ejecucion'
@@ -187,10 +187,21 @@ DAPP_TAG = v1
 DAPP_CONTAINER_NAME=tokens_nft
 
 
-build_dapp: ## 
+build_dapp: ## construccion de la DAPP
 	@echo 'construccion de la DAPP'
 	cd colores && docker build -t $(DAPP_IMAGE):$(DAPP_TAG) . 
 
-run_dapp:
+run_dapp: ## Despliegue de la DAPP
 	@echo 'Despliegue de la DAPP'
-	docker run -dp 3000:3000 --name
+	docker run -dp 3000:3000 --name $(DAPP_CONTAINER_NAME) $(DAPP_IMAGE):$(DAPP_TAG)
+
+stop_dapp: ## para la ejecucion de la DAPP
+	@echo 'Parar la ejecucion de la DAPP'
+	docker stop $(DAPP_CONTAINER_NAME)
+
+restart_dapp: ## Reinicio de la DApp
+	@echo 'Reinicio de la DApp'
+	docker stop $(DAPP_CONTAINER_NAME)
+delete_dapp: ## Depp delete
+	@echo 'Reinicio de la DApp'
+	docker stop $(DAPP_CONTAINER_NAME)
