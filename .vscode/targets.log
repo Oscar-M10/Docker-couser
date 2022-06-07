@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
  # Este programa fue construido para i386-pc-mingw32
  
 
-# Base de datos del Make, mostrada en Mon Jun 06 14:40:18 2022
+# Base de datos del Make, mostrada en Tue Jun 07 08:30:01 2022
 
 # Variables
 
@@ -34,8 +34,7 @@ HOMEDRIVE = C:
 @F = $(notdir $@)
 # autom�tica/o
 ^D = $(patsubst %/,%,$(dir $^))
-# m 
-akefile
+# makefile
 CURDIR := c:/Users/SUPERVISOR/Desktop/automatizaci�n
 # por defecto
 SHELL := sh.exe
@@ -50,7 +49,10 @@ ONEDRIVE = C:\Users\SUPERVISOR\OneDrive - Instituto Tecnol�gico Superior de Mu
 # entorno
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (de `makefile', l�nea 1):
-MAKEFILE_LIST :=  makefile
+MAKEFILE_LIST :=  m 
+akefile
+# entorno
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # entorno
 TMP = C:\Users\SUPERV~1\AppData\Local\Temp
 # makefile (de `makefile', l�nea 12):
@@ -62,7 +64,7 @@ PROGRAMW6432 = C:\Program Files
 # entorno
 PROGRAMDATA = C:\ProgramData
 # entorno
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2efa54f8-1ed0-4be4-b069-c1b3baf28340-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ae61fa67-66bc-48e3-9db3-abfecd0dd57e-sock
 # entorno
 VSCODE_CWD = C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code
 # entorno
@@ -88,7 +90,7 @@ ELECTRON_RUN_AS_NODE = 1
 # autom�tica/o
 %F = $(notdir $%)
 # entorno
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4008_YWAPLDBJZBWNUCDG
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9676_SSZIHWACSKISDIUC
 # entorno
 VSCODE_PIPE_LOGGING = true
 # entorno
@@ -108,7 +110,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # entorno
 VSCODE_CODE_CACHE_PATH = C:\Users\SUPERVISOR\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # entorno
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # entorno
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # entorno
@@ -198,11 +200,13 @@ LANG = C
 # entorno
 PROCESSOR_LEVEL = 6
 # entorno
-VSCODE_PID = 4008
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# entorno
+VSCODE_PID = 9676
 # entorno
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # estad�sticas del conjunto de variables de la tabla de hash:
-# Carga=94/1024=9%, Rehash=0, Colisiones=9/114=8%
+# Carga=96/1024=9%, Rehash=0, Colisiones=9/116=8%
 
 # Valores de variables espec�ficas al patr�n
 
@@ -216,7 +220,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528089): 30 archivos, no imposibilidades.
 # C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps (llave C:/Users/SUPERVISOR/AppData/Local/Microsoft/WindowsApps, mtime 1653673214): 15 archivos, no imposibilidades.
 # C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1652452309): 171 archivos, no imposibilidades.
-# . (llave c:/Users/SUPERVISOR/Desktop/automatizaci�n, mtime 1654544037): 5 archivos, no imposibilidades.
+# . (llave c:/Users/SUPERVISOR/Desktop/automatizaci�n, mtime 1654548119): 6 archivos, no imposibilidades.
 # C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/SUPERVISOR/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1654532947): 4 archivos, no imposibilidades.
 # C:\Windows\System32\OpenSSH\: podr�a no estar establecido.
 # C:\Program Files\PuTTY\ (llave C:/Program Files/PuTTY/, mtime 1654011803): 12 archivos, no imposibilidades.
@@ -224,11 +228,11 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # C:\Windows (llave C:/Windows, mtime 1653489566): 106 archivos, no imposibilidades.
 # C:\ProgramData\DockerDesktop\version-bin: podr�a no estar establecido.
 # C:\Program Files\Git\cmd (llave C:/Program Files/Git/cmd, mtime 1654547521): 8 archivos, no imposibilidades.
-# C:\Windows\system32 (llave C:/Windows/system32, mtime 1654542138): 2807 archivos, no imposibilidades.
-# C:\Program Files  
-(x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1654533446): 5 archivos, no imposibilidades.
+# C:\Wi 
+ndows\system32 (llave C:/Windows/system32, mtime 1654611445): 2807 archivos, no imposibilidades.
+# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1654533446): 5 archivos, no imposibilidades.
 
-# 3187 archivos, no imposibilidades en 16 directorios.
+# 3188 archivos, no imposibilidades en 16 directorios.
 
 # Reglas impl�citas.
 
@@ -457,14 +461,14 @@ stop_monitor_redis_exporter:
 	cd monitor/redis-exporter && docker-compose stop redis-exporter
 	
 
-# estad�sticas de la tabla de hash de los archivos:
+# estad�sticas de la tabla de hash de los  
+make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
+
+archivos:
 # Carga=22/1024=2%, Rehash=0, Colisiones=0/33=0%
 # Rutas de b�squeda VPATH
 
-# No hay rutas de b�squeda `vp 
-make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
-
-ath'.
+# No hay rutas de b�squeda `vpath'.
 
 # No hay ruta de b�squeda general (variable `VPATH').
 
@@ -473,6 +477,6 @@ ath'.
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Se termina la base de datos de Make en Mon Jun 06 14:40:18 2022
+# Se termina la base de datos de Make en Tue Jun 07 08:30:01 2022
 
  

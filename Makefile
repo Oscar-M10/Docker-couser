@@ -12,8 +12,8 @@ REDIS_TAG=3
 REDIS_CONTAINER_NAME=redis
 REDIS_IMAGE_NAME=redis
 
-#Construcción y despliegue de redis
-build_redis:
+
+build_redis: ##Construcción y despliegue de redis
 	@echo 'Construccion de redis con el TAG=$(REDIS_TAG)'
 	docker pull $(REDIS_IMAGE_NAME):$(REDIS_TAG)
 	@echo 'Ejecucion de un contenedor de $(REDIS_IMAGE_NAME) con el nombre $(REDIS_CONTAINER_NAME)'
@@ -24,8 +24,8 @@ build_redis:
 #visualizar contenedores inactivos
 #----------------------------------------
 
-#visualización
-show_images_containers:
+
+show_images_containers: ##visualización
 	@echo 'Imagenes de docker'
 	docker images -a
 	@echo 'Contenedores en Ejecucion'
@@ -37,8 +37,8 @@ show_images_containers:
 #Visualizar de nuevo
 #-------------------------------------------
 
-#Eliminacion de redis
-delete_redis:
+
+delete_redis:##Eliminacion de redis
 	@echo 'parar redis'
 	docker stop $(REDIS_CONTAINER_NAME)
 	@echo 'eliminacion del contenedor $(REDIS_IMAGE_NAME)'
@@ -70,7 +70,7 @@ build_monitor_redis_exporter:
 	@echo 'Construccion y despliegue de prometheus'
 	cd monitor/redis-exporter && docker-compose up -d
 
-build_monitor: 
+build_monitor:##construcción de monitor
 	@echo 'Contenedores en ejecucion'
 	docker ps -a 
 	$(MAKE) build_monitor_prometheus
@@ -91,7 +91,7 @@ stop_monitor_redis:
 stop_monitor_redis_exporter:
 	@echo 'Parar el servicio de redis-exporter'
 	cd monitor/redis-exporter && docker-compose stop redis-exporter
-stop_monitor:
+stop_monitor:##Parar los servicios del monitor
 	@echo 'Contenedores en ejecucion'
 	docker ps -a 
 	$(MAKE) stop_monitor_prometheus
@@ -112,7 +112,7 @@ down_monitor_redis:
 down_monitor_redis_exporter:
 	@echo 'Parar el servicio de redis exporter'
 	cd monitor/redis-exporter && docker-compose down redis-exporter
-down_monitor:
+down_monitor:##Eliminación de los servicios del monitor
 	@echo 'Contenedores en ejecucion'
 	docker ps -a 
 	$(MAKE) down_monitor_prometheus
