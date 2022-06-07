@@ -204,4 +204,5 @@ restart_dapp: ## Reinicio de la DApp
 	docker stop $(DAPP_CONTAINER_NAME)
 delete_dapp: ## Depp delete
 	@echo 'Reinicio de la DApp'
-	docker stop $(DAPP_CONTAINER_NAME)
+	$(MAKE) stop_dapp
+	docker rm $(DAPP_CONTAINER_NAME)
