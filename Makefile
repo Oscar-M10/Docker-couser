@@ -223,6 +223,7 @@ test_dapp: ## Test de la DApp
 CADVISOR_IMAGE=google/cadvisor
 CADVISOR_TAG=v0.33.0
 CADVISOR_CONTAINER=cadvisor_oscar
+PATH_CADVISOR_IMAGE=C:\Users\SUPERVISOR\Desktop\automatico
 
 build_cadvisor: ## contruccion y despliegue de CADVISOR
 	@echo 'Descarga de la imagen de $(CADVISOR_IMAGE)'
@@ -230,4 +231,7 @@ build_cadvisor: ## contruccion y despliegue de CADVISOR
 	@echo 'Ejecucion de $(CADVISOR_IMAGE)'
 	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE)
 
-	
+save_cadvisor:
+	@echo 'Guarda la imagen cAdvisor'
+	docker save $(ADVISOR_IMAGE):$(CADVISOR_TAG) | gzip >$(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+

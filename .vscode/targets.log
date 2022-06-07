@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
  # Este programa fue construido para i386-pc-mingw32
  
 
-# Base de datos del Make, mostrada en Tue Jun 07 08:30:01 2022
+# Base de datos del Make, mostrada en Tue Jun 07 12:15:01 2022
 
 # Variables
 
@@ -24,7 +24,7 @@ MAKEFLAGS = Rrqp
 VSCODE_LOG_NATIVE = false
 # autom�tica/o
 ?D = $(patsubst %/,%,$(dir $?))
-# makefile (de `makefile', l�nea 11):
+# makefile (de `makefile', l�nea 4):
 REDIS_TAG = 3
 # autom�tica/o
 @D = $(patsubst %/,%,$(dir $@))
@@ -34,8 +34,9 @@ HOMEDRIVE = C:
 @F = $(notdir $@)
 # autom�tica/o
 ^D = $(patsubst %/,%,$(dir $^))
-# makefile
-CURDIR := c:/Users/SUPERVISOR/Desktop/automatizaci�n
+# ma 
+kefile
+CURDIR := c:/Users/SUPERVISOR/Desktop/automatico
 # por defecto
 SHELL := sh.exe
 # entorno
@@ -46,16 +47,21 @@ VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{},"_languagePackSupport
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # entorno
 ONEDRIVE = C:\Users\SUPERVISOR\OneDrive - Instituto Tecnol�gico Superior de Mulege
+# makefile (de `makefile', l�nea 186):
+DAPP_TAG = v1
+# makefile (de `makefile', l�nea 224):
+CADVISOR_TAG = v0.33.0
+# makefile (de `makefile', l�nea 162):
+KIBANA_IMAGE = "kibana:7.9.2"
 # entorno
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (de `makefile', l�nea 1):
-MAKEFILE_LIST :=  m 
-akefile
+MAKEFILE_LIST :=  makefile
 # entorno
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # entorno
 TMP = C:\Users\SUPERV~1\AppData\Local\Temp
-# makefile (de `makefile', l�nea 12):
+# makefile (de `makefile', l�nea 5):
 REDIS_CONTAINER_NAME = redis
 # entorno
 VSCODE_VERBOSE_LOGGING = true
@@ -63,12 +69,18 @@ VSCODE_VERBOSE_LOGGING = true
 PROGRAMW6432 = C:\Program Files
 # entorno
 PROGRAMDATA = C:\ProgramData
+# makefile (de `makefile', l�nea 161):
+LOGSTASH_IMAGE = "logstash:7.9.2"
 # entorno
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ae61fa67-66bc-48e3-9db3-abfecd0dd57e-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-83551fdc-37da-45df-b940-818e84dcc6b7-sock
 # entorno
 VSCODE_CWD = C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code
+# makefile (de `makefile', l�nea 187):
+DAPP_CONTAINER_NAME = tokens_nft
 # entorno
 PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Git\cmd;C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps;;C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin
+# makefile (de `makefile', l�nea 226):
+PATH_CADVISOR_IMAGE = C:\Users\SUPERVISOR\Desktop\automatización
 # entorno
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # entorno
@@ -79,6 +91,10 @@ PROCESSOR_ARCHITECTURE = x86
 USERPROFILE = C:\Users\SUPERVISOR
 # entorno
 ALLUSERSPROFILE = C:\ProgramData
+# makefile (de `makefile', l�nea 185):
+DAPP_IMAGE = tokensnft
+# makefile (de `makefile', l�nea 223):
+CADVISOR_IMAGE = google/cadvisor
 # entorno
 VSCODE_LOG_STACK = false
 # entorno
@@ -90,7 +106,7 @@ ELECTRON_RUN_AS_NODE = 1
 # autom�tica/o
 %F = $(notdir $%)
 # entorno
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9676_SSZIHWACSKISDIUC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1408_TFWDKUPBEIEJHIXL
 # entorno
 VSCODE_PIPE_LOGGING = true
 # entorno
@@ -107,10 +123,12 @@ USERNAME = SUPERVISOR
 PUBLIC = C:\Users\Public
 # entorno
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (de `makefile', l�nea 160):
+ELASTICSEARCH_IMAGE = "elasticsearch:7.9.2"
 # entorno
 VSCODE_CODE_CACHE_PATH = C:\Users\SUPERVISOR\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # entorno
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # entorno
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # entorno
@@ -141,6 +159,8 @@ PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\Wi
 MAKE_COMMAND := make.exe
 # entorno
 PROCESSOR_ARCHITEW6432 = AMD64
+# makefile (de `makefile', l�nea 225):
+CADVISOR_CONTAINER = cadvisor_oscar
 # por defecto
 .VARIABLES := 
 # autom�tica/o
@@ -179,7 +199,7 @@ COMSPEC = C:\Windows\system32\cmd.exe
 MAKEFILES := 
 # autom�tica/o
 <F = $(notdir $<)
-# makefile (de `makefile', l�nea 13):
+# makefile (de `makefile', l�nea 6):
 REDIS_IMAGE_NAME = redis
 # entorno
 LC_ALL = C
@@ -202,11 +222,11 @@ PROCESSOR_LEVEL = 6
 # entorno
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # entorno
-VSCODE_PID = 9676
+VSCODE_PID = 1408
 # entorno
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # estad�sticas del conjunto de variables de la tabla de hash:
-# Carga=96/1024=9%, Rehash=0, Colisiones=9/116=8%
+# Carga=106/1024=10%, Rehash=0, Colisiones=9/126=7%
 
 # Valores de variables espec�ficas al patr�n
 
@@ -220,7 +240,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528089): 30 archivos, no imposibilidades.
 # C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps (llave C:/Users/SUPERVISOR/AppData/Local/Microsoft/WindowsApps, mtime 1653673214): 15 archivos, no imposibilidades.
 # C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1652452309): 171 archivos, no imposibilidades.
-# . (llave c:/Users/SUPERVISOR/Desktop/automatizaci�n, mtime 1654548119): 6 archivos, no imposibilidades.
+# . (llave c:/Users/SUPERVISOR/Desktop/automatico, mtime 1654618273): 8 archivos, no imposibilidades.
 # C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/SUPERVISOR/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1654532947): 4 archivos, no imposibilidades.
 # C:\Windows\System32\OpenSSH\: podr�a no estar establecido.
 # C:\Program Files\PuTTY\ (llave C:/Program Files/PuTTY/, mtime 1654011803): 12 archivos, no imposibilidades.
@@ -228,15 +248,17 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # C:\Windows (llave C:/Windows, mtime 1653489566): 106 archivos, no imposibilidades.
 # C:\ProgramData\DockerDesktop\version-bin: podr�a no estar establecido.
 # C:\Program Files\Git\cmd (llave C:/Program Files/Git/cmd, mtime 1654547521): 8 archivos, no imposibilidades.
-# C:\Wi 
-ndows\system32 (llave C:/Windows/system32, mtime 1654611445): 2807 archivos, no imposibilidades.
+# C:\Windows\system32 (llave C:/Windows/system32, mtime 1654611445): 2807 archivos, no imposibilidades.
 # C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1654533446): 5 archivos, no imposibilidades.
 
-# 3188 archivos, no imposibilidades en 16 directorios.
+# 3190 archivos, no imposibilidades en 16 directorios.
 
 # Reglas impl�citas.
 
-# No hay reglas impl�citas.
+# 
+make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
+
+ No hay reglas impl�citas.
 
 # Archivos
 
@@ -244,17 +266,26 @@ down_monitor_grafana:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 107):
+#  comandos para ejecutar (de `makefile', linea 109):
 	@echo 'Parar el servicio de grafana'
 	cd monitor/grafana && docker-compose down grafana
+	
+
+save_cadvisor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 235):
+	@echo 'Guarda la imagen cAdvisor'
+	docker save $(ADVISOR_IMAGE):$(CADVISOR_TAG) | gzip >$(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
 	
 
 stop_monitor_grafana:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 86):
-	@echo 'Parar el servicio de grafana'
+#  comandos para ejecutar (de `makefile', linea 82):
+	@echo 'Parar el servicio de Grafana'
 	cd monitor/grafana && docker-compose stop grafana
 	
 
@@ -262,28 +293,30 @@ down_monitor:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 116):
-	@echo 'Contenedores en ejecucion'
-	docker ps -a 
+#  comandos para ejecutar (de `makefile', linea 121):
+	@echo 'Contenedores en ejecución'
+	docker ps -a
 	$(MAKE) down_monitor_prometheus
 	$(MAKE) down_monitor_grafana
 	$(MAKE) down_monitor_redis
 	$(MAKE) down_monitor_redis_exporter
-	@echo 'Contenedores en ejecucion'
-	docker ps -a 
+	@echo 'Contenedores en ejecución'
+	docker ps -a
 	
 
 stop_monitor:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 95):
-	@echo 'Contenedores en ejecucion'
-	docker ps -a 
+#  comandos para ejecutar (de `makefile', linea 94):
+	@echo 'Contenedores en ejecución'
+	docker ps -a
 	$(MAKE) stop_monitor_prometheus
 	$(MAKE) stop_monitor_grafana
 	$(MAKE) stop_monitor_redis
 	$(MAKE) stop_monitor_redis_exporter
+	@echo 'Contenedores en ejecución'
+	docker ps -a
 	
 
 # No es un objetivo:
@@ -299,18 +332,23 @@ delete_redis:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 42):
-	@echo 'parar redis'
+#  comandos para ejecutar (de `makefile', linea 34):
+	@echo 'Parar redis'
 	docker stop $(REDIS_CONTAINER_NAME)
-	@echo 'eliminacion del contenedor $(REDIS_IMAGE_NAME)'
+	@echo 'Eliminación del contenedor $(REDIS_CONTAINER_NAME)'
 	docker rm $(REDIS_CONTAINER_NAME)
-	@echo 'Eliminacion d ela imgen $(REDIS_IMAGE_NAME)'
+	@echo 'Eliminación de la imagen $(REDIS_IMAGE_NAME)'
 	docker rmi $(REDIS_IMAGE_NAME):$(REDIS_TAG)
-	@echo 'Imagenes de docker'
+	@echo 'Imágenes de docker'
 	docker images -a
-	@echo 'verificacion de la eliminacion'
+	@echo 'Verificación de la eliminación'
 	docker ps -a
 	
+
+.PHONY: help
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
 
 # No es un objetivo:
 .DEFAULT:
@@ -318,28 +356,77 @@ delete_redis:
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
 
+test_dapp:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 216):
+	@echo 'Test de la DApp'
+	docker run -t $(DAPP_IMAGE):$(DAPP_TAG) test 
+	
+
+build_dapp:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 191):
+	@echo 'construccion de la DAPP'
+	cd colores && docker build -t $(DAPP_IMAGE):$(DAPP_TAG) . 
+	
+
+start_elk:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 150):
+	@echo 'Encender los servicios ELK '
+	cd ELK && docker-compose start
+	
+
 build_monitor_prometheus:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 58):
-	@echo 'Construccion y despliegue de prometheus'
-	cd monitor/prometheus && docker-compose up -d 
+#  comandos para ejecutar (de `makefile', linea 51):
+	@echo 'Construcción y despliegue de Prometheus'
+	cd monitor/prometheus && docker-compose up -d
+	
+
+build_cadvisor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 229):
+	@echo 'Descarga de la imagen de $(CADVISOR_IMAGE)'
+	docker pull $(CADVISOR_IMAGE):$(CADVISOR_TAG)
+	@echo 'Ejecucion de $(CADVISOR_IMAGE)'
+	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE)
+	
+
+build_elk:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 140):
+	@echo 'construccion de ELK'
+	cd ELK && docker-compose build
+	@echo 'despliegue de ELK'
+	cd ELK && docker-compose up -d 
 	
 
 build_monitor_redis_exporter:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 70):
-	@echo 'Construccion y despliegue de prometheus'
+#  comandos para ejecutar (de `makefile', linea 63):
+	@echo 'Construcción y despliegue de redis-exporter'
 	cd monitor/redis-exporter && docker-compose up -d
 	
 
 # No es un objetivo:
 makefile:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
-#  �ltima modificaci�n 2022-06-06 14:20:37
+#  �ltima modificaci�n 2022-06-07 12:12:13
 #  El archivo ha sido actualizado.
 #  Actualizado con �xito.
 # estad�sticas del conjunto de variables de la tabla de hash:
@@ -349,7 +436,7 @@ down_monitor_redis:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 110):
+#  comandos para ejecutar (de `makefile', linea 113):
 	@echo 'Parar el servicio de redis'
 	cd monitor/redis && docker-compose down redis
 	
@@ -358,8 +445,8 @@ build_monitor_grafana:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 62):
-	@echo 'Construccion y despliegue de prometheus'
+#  comandos para ejecutar (de `makefile', linea 55):
+	@echo 'Construcción y despliegue de Grafana'
 	cd monitor/grafana && docker-compose up -d
 	
 
@@ -367,7 +454,7 @@ stop_monitor_redis:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 89):
+#  comandos para ejecutar (de `makefile', linea 86):
 	@echo 'Parar el servicio de redis'
 	cd monitor/redis && docker-compose stop redis
 	
@@ -376,27 +463,46 @@ build_monitor:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 74):
-	@echo 'Contenedores en ejecucion'
+#  comandos para ejecutar (de `makefile', linea 67):
+	@echo 'Contenedores en ejecución'
 	docker ps -a 
 	$(MAKE) build_monitor_prometheus
 	$(MAKE) build_monitor_grafana
 	$(MAKE) build_monitor_redis
 	$(MAKE) build_monitor_redis_exporter
-	docker ps -a
+	@echo 'Contenedores en ejecución'
+	docker ps -a 
+	
+
+help:
+#  objetivo falso (dependencia de .PHONY).
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  El archivo no existe.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 133):
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 	
 
 show_images_containers:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 29):
-	@echo 'Imagenes de docker'
+#  comandos para ejecutar (de `makefile', linea 21):
+	@echo 'Imágenes de docker'
 	docker images -a
-	@echo 'Contenedores en Ejecucion'
+	@echo 'Contenedores en ejecución'
 	docker ps --filter status=running
-	@echo 'Contenedores fuera de Ejecucion'
+	@echo 'Contenedores fuera de ejecución'
 	docker ps --filter status=exited
+	
+
+restart_dapp:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 203):
+	@echo 'Reinicio de la DApp'
+	docker stop $(DAPP_CONTAINER_NAME)
 	
 
 # No es un objetivo:
@@ -405,23 +511,79 @@ show_images_containers:
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
 
+run_dapp:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 195):
+	@echo 'Despliegue de la DAPP'
+	docker run -dp 3000:3000 --name $(DAPP_CONTAINER_NAME) $(DAPP_IMAGE):$(DAPP_TAG)
+	
+
+restart_elk:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 154):
+	@echo 'Reinicio de ELK'
+	$(MAKE) stop_elk
+	$(MAKE) start_elk
+	docker ps 
+	
+
+deep_delete:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 173):
+	$(MAKE) show_elk
+	@echo 'Eliminacion de contenedores'
+	cd ELK && docker-compose down
+	@echo 'Purgación de las imagenes'
+	docker rmi $(ELASTICSEARCH_IMAGE) $(LOGSTASH_IMAGE) $(KIBANA_IMAGE)
+	$(MAKE) show_elk
+	
+
 build_redis:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 17):
-	@echo 'Construccion de redis con el TAG=$(REDIS_TAG)'
+#  comandos para ejecutar (de `makefile', linea 9):
+	@echo 'Construcción de redis con el TAG=$(REDIS_TAG)'
 	docker pull $(REDIS_IMAGE_NAME):$(REDIS_TAG)
-	@echo 'Ejecucion de un contenedor de $(REDIS_IMAGE_NAME) con el nombre $(REDIS_CONTAINER_NAME)'
+	@echo 'Ejecución de un contenedor de $(REDIS_IMAGE_NAME) con el nombre $(REDIS_CONTAINER_NAME)'
 	docker run -d --name $(REDIS_CONTAINER_NAME) $(REDIS_IMAGE_NAME):$(REDIS_TAG)
+	
+
+delete_dapp:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 207):
+	@echo 'Reinicio de la DApp'
+	$(MAKE) stop_dapp
+	docker rm $(DAPP_CONTAINER_NAME)
+	
+
+show:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 165):
+	@echo 'Eliminacion profunda de ELK'
+	docker images -a
+	@echo 'Contenedores en ejecucion'
+	docker ps --filter status=running
+	@echo 'Contenedores fuera de ejecucion'
+	docker ps --filter status=exited
 	
 
 build_monitor_redis:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 66):
-	@echo 'Construccion y despliegue de prometheus'
+#  comandos para ejecutar (de `makefile', linea 59):
+	@echo 'Construcción y despliegue de redis'
 	cd monitor/redis && docker-compose up -d
 	
 
@@ -429,17 +591,35 @@ down_monitor_prometheus:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 104):
-	@echo 'Parar el servicio de prometheus'
+#  comandos para ejecutar (de `makefile', linea 105):
+	@echo 'Parar el servicio de Prometheus'
 	cd monitor/prometheus && docker-compose down prometheus
+	
+
+stop_dapp:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 199):
+	@echo 'Parar la ejecucion de la DAPP'
+	docker stop $(DAPP_CONTAINER_NAME)
+	
+
+show_requirements:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 212):
+	@echo 'Visualicacion de las dependencias de la DApp'
+	docker run docker run -it $(DAPP_IMAGE:$(DAPP_TAG) bash
 	
 
 stop_monitor_prometheus:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 83):
-	@echo 'Parar el servicio de prometheus'
+#  comandos para ejecutar (de `makefile', linea 78):
+	@echo 'Parar el servicio de Prometheus'
 	cd monitor/prometheus && docker-compose stop prometheus
 	
 
@@ -447,25 +627,31 @@ down_monitor_redis_exporter:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 113):
-	@echo 'Parar el servicio de redis exporter'
+#  comandos para ejecutar (de `makefile', linea 117):
+	@echo 'Parar el servicio de redis-exporter'
 	cd monitor/redis-exporter && docker-compose down redis-exporter
+	
+
+stop_elk:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 146):
+	@echo 'parar los servicios'
+	cd ELK && docker-compose stop
 	
 
 stop_monitor_redis_exporter:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
 #  El archivo ha sido actualizado.
-#  comandos para ejecutar (de `makefile', linea 92):
-	@echo 'Parar el servicio de redis-exporter'
+#  comandos para ejecutar (de `makefile', linea 90):
+	@echo 'Parar el servicio de redis'
 	cd monitor/redis-exporter && docker-compose stop redis-exporter
 	
 
-# estad�sticas de la tabla de hash de los  
-make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
-
-archivos:
-# Carga=22/1024=2%, Rehash=0, Colisiones=0/33=0%
+# estad�sticas de la tabla de hash de los archivos:
+# Carga=39/1024=4%, Rehash=0, Colisiones=0/51=0%
 # Rutas de b�squeda VPATH
 
 # No hay rutas de b�squeda `vpath'.
@@ -477,6 +663,6 @@ archivos:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Se termina la base de datos de Make en Tue Jun 07 08:30:01 2022
+# Se termina la base de datos de Make en Tue Jun 07 12:15:01 2022
 
  

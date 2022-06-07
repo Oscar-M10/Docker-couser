@@ -1,8 +1,8 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make.exe: se ingresa al directorio `c:/Users/SUPERVISOR/Desktop/automatizaci�n'
-echo 'Construccion de redis con el TAG=3'
+make.exe: se ingresa al directorio `c:/Users/SUPERVISOR/Desktop/automatico'
+echo 'Construcción de redis con el TAG=3'
 docker pull redis:3
-echo 'Ejecucion de un contenedor de redis con el nombre redis'
+echo 'Ejecución de un contenedor de redis con el nombre redis'
 docker run -d --name redis redis:3
-make.exe: se sale del directorio `c:/Users/SUPERVISOR/Desktop/automatizaci�n'
+make.exe: se sale del directorio `c:/Users/SUPERVISOR/Desktop/automatico'
  
