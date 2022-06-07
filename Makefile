@@ -202,7 +202,12 @@ stop_dapp: ## para la ejecucion de la DAPP
 restart_dapp: ## Reinicio de la DApp
 	@echo 'Reinicio de la DApp'
 	docker stop $(DAPP_CONTAINER_NAME)
+
 delete_dapp: ## Depp delete
 	@echo 'Reinicio de la DApp'
 	$(MAKE) stop_dapp
 	docker rm $(DAPP_CONTAINER_NAME)
+
+show_requirements: ## Visualización de las dependencias de la DApp
+	@echo 'Visualicacion de las dependencias de la DApp'
+	docker run docker run -it $(DAPP_IMAGE:$(DAPP_TAG) bash
