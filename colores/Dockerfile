@@ -16,6 +16,7 @@ COPY package-lock.json ./
 # Ejecutar la instalación de los módulos
 RUN echo "Instalación de los módulos"
 RUN npm install
+RUN npm install -g truffle
 
 # Exposición del puerto 3000
 EXPOSE 3000
