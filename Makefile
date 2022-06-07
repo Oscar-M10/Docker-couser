@@ -121,3 +121,7 @@ down_monitor:##Eliminación de los servicios del monitor
 	$(MAKE) down_monitor_redis_exporter
 	@echo 'Contenedores en ejecucion'
 	docker ps -a 
+# Proporciona ayuda
+.PHONY: help
+help: ## Comando de ayuda
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
