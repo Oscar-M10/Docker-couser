@@ -215,3 +215,19 @@ show_requirements: ## Visualización de las dependencias de la DApp
 test_dapp: ## Test de la DApp
 	@echo 'Test de la DApp'
 	docker run -t $(DAPP_IMAGE):$(DAPP_TAG) test 
+
+# -----------------------------------
+# 4. DESPLIGUE DE CADVISOR
+# -----------------------------------
+
+CADVISOR_IMAGE=google/cadvisor
+CADVISOR_TAG=v0.33.0
+CADVISOR_CONTAINER=cadvisor_oscar
+
+build_cadvisor: ## contruccion y despliegue de CADVISOR
+	@echo 'Descarga de la imagen de $(CADVISOR_IMAGE)'
+	docker pull $(CADVISOR_IMAGE):$(CADVISOR_TAG)
+	@echo 'Ejecucion de $(CADVISOR_IMAGE)'
+	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE)
+
+	
