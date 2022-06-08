@@ -25,5 +25,4 @@ EXPOSE 3000
 COPY . .
 
 # Ejecución de la DAPP
-CMD ["bash"]
-ENTRYPOINT [ "entrypoint.sh" ]
+CMD ["npm", "run", "start"]

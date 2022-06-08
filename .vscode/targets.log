@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
  # Este programa fue construido para i386-pc-mingw32
  
 
-# Base de datos del Make, mostrada en Tue Jun 07 12:15:01 2022
+# Base de datos del Make, mostrada en Wed Jun 08 08:35:56 2022
 
 # Variables
 
@@ -72,7 +72,7 @@ PROGRAMDATA = C:\ProgramData
 # makefile (de `makefile', l�nea 161):
 LOGSTASH_IMAGE = "logstash:7.9.2"
 # entorno
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-83551fdc-37da-45df-b940-818e84dcc6b7-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-93c59009-ae4d-4230-b122-7e3b5d4e071b-sock
 # entorno
 VSCODE_CWD = C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code
 # makefile (de `makefile', l�nea 187):
@@ -80,7 +80,7 @@ DAPP_CONTAINER_NAME = tokens_nft
 # entorno
 PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Git\cmd;C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps;;C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin
 # makefile (de `makefile', l�nea 226):
-PATH_CADVISOR_IMAGE = C:\Users\SUPERVISOR\Desktop\automatización
+PATH_CADVISOR_IMAGE = C:\Users\SUPERVISOR\Desktop\automatico
 # entorno
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # entorno
@@ -106,7 +106,7 @@ ELECTRON_RUN_AS_NODE = 1
 # autom�tica/o
 %F = $(notdir $%)
 # entorno
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1408_TFWDKUPBEIEJHIXL
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11288_XJQWCMVZQIMHYYOW
 # entorno
 VSCODE_PIPE_LOGGING = true
 # entorno
@@ -222,7 +222,7 @@ PROCESSOR_LEVEL = 6
 # entorno
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # entorno
-VSCODE_PID = 1408
+VSCODE_PID = 11288
 # entorno
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # estad�sticas del conjunto de variables de la tabla de hash:
@@ -240,7 +240,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528089): 30 archivos, no imposibilidades.
 # C:\Users\SUPERVISOR\AppData\Local\Microsoft\WindowsApps (llave C:/Users/SUPERVISOR/AppData/Local/Microsoft/WindowsApps, mtime 1653673214): 15 archivos, no imposibilidades.
 # C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1652452309): 171 archivos, no imposibilidades.
-# . (llave c:/Users/SUPERVISOR/Desktop/automatico, mtime 1654618273): 8 archivos, no imposibilidades.
+# . (llave c:/Users/SUPERVISOR/Desktop/automatico, mtime 1654632040): 10 archivos, no imposibilidades.
 # C:\Users\SUPERVISOR\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/SUPERVISOR/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1654532947): 4 archivos, no imposibilidades.
 # C:\Windows\System32\OpenSSH\: podr�a no estar establecido.
 # C:\Program Files\PuTTY\ (llave C:/Program Files/PuTTY/, mtime 1654011803): 12 archivos, no imposibilidades.
@@ -249,16 +249,14 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-EJRUL4M
 # C:\ProgramData\DockerDesktop\version-bin: podr�a no estar establecido.
 # C:\Program Files\Git\cmd (llave C:/Program Files/Git/cmd, mtime 1654547521): 8 archivos, no imposibilidades.
 # C:\Windows\system32 (llave C:/Windows/system32, mtime 1654611445): 2807 archivos, no imposibilidades.
-# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1654533446): 5 archivos, no imposibilidades.
+# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1654627731): 19 archivos, no imposibilidades.
 
-# 3190 archivos, no imposibilidades en 16 directorios.
+# 3206 archivos, no imposibilidades en 16 directorios.
 
 # Reglas impl�citas.
 
-# 
-make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
-
- No hay reglas impl�citas.
+#  
+No hay reglas impl�citas.
 
 # Archivos
 
@@ -277,7 +275,9 @@ save_cadvisor:
 #  El archivo ha sido actualizado.
 #  comandos para ejecutar (de `makefile', linea 235):
 	@echo 'Guarda la imagen cAdvisor'
-	docker save $(ADVISOR_IMAGE):$(CADVISOR_TAG) | gzip >$(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+	docker save $(ADVISOR_IMAGE):$(CADVISOR_TAG) | gzip > $(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+	@echo 'Conexion remota con AWS con SSH'
+	@echo 'Carga de la imagen'
 	
 
 stop_monitor_grafana:
@@ -400,7 +400,7 @@ build_cadvisor:
 	@echo 'Descarga de la imagen de $(CADVISOR_IMAGE)'
 	docker pull $(CADVISOR_IMAGE):$(CADVISOR_TAG)
 	@echo 'Ejecucion de $(CADVISOR_IMAGE)'
-	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE)
+	docker run -d --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE):$(CADVISOR_TAG)
 	
 
 build_elk:
@@ -426,7 +426,7 @@ build_monitor_redis_exporter:
 # No es un objetivo:
 makefile:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
-#  �ltima modificaci�n 2022-06-07 12:12:13
+#  �ltima modificaci�n 2022-06-07 13:02:56
 #  El archivo ha sido actualizado.
 #  Actualizado con �xito.
 # estad�sticas del conjunto de variables de la tabla de hash:
@@ -544,6 +544,16 @@ deep_delete:
 	$(MAKE) show_elk
 	
 
+aws_connection:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 247):
+	$(MAKE) save_cadvisor
+	@echo 'Conexion remota con ASW con SSH'
+	$(MAKE) load_cadvisor
+	
+
 build_redis:
 #  La b�squeda de reglas impl�citas ha sido efectuada.
 #  La fecha de modificaci�n no se comprob�.
@@ -585,6 +595,26 @@ build_monitor_redis:
 #  comandos para ejecutar (de `makefile', linea 59):
 	@echo 'Construcción y despliegue de redis'
 	cd monitor/redis && docker-compose up -d
+	
+
+delete_cadvisor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 252):
+	docker rm -f $(CADVISOR_CONTAINER)
+	docker rmi $(CADVISOR_IMAGE):$(CADVISOR_TAG)
+	
+
+load_cadvisor:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+#  comandos para ejecutar (de `makefile', linea 241):
+	@echo 'Carga de la imagen'
+	docker load --input $(PATH_CADVISOR_IMAGE)\cadvisor.tar.gz
+	@echo 'Ejecucion de un contenedor para cAdvisor'
+	docker run -dp 8080:8080 --name $(CADVISOR_CONTAINER) $(CADVISOR_IMAGE):$(CADVISOR_TAG)
 	
 
 down_monitor_prometheus:
@@ -651,8 +681,11 @@ stop_monitor_redis_exporter:
 	
 
 # estad�sticas de la tabla de hash de los archivos:
-# Carga=39/1024=4%, Rehash=0, Colisiones=0/51=0%
-# Rutas de b�squeda VPATH
+# Carga=42/1024=4%, Rehash=0, Colisiones=0/54=0%
+# Rutas de b�squeda V 
+make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
+
+PATH
 
 # No hay rutas de b�squeda `vpath'.
 
@@ -663,6 +696,6 @@ stop_monitor_redis_exporter:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Se termina la base de datos de Make en Tue Jun 07 12:15:01 2022
+# Se termina la base de datos de Make en Wed Jun 08 08:35:56 2022
 
  
